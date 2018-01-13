@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="default_manifest.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="grey_alert.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="grey_alert_16.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="grey_alert_24.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="red_alert_16.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="red_alert_24.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="settings_ico.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="functions.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="settings_data.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="settingsForm.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="passwordForm.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="newPasswordForm.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="aboutForm.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="settings_data.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="settingsForm.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="passwordForm.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="newPasswordForm.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="aboutForm.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="settingsForm.resx">
+      <Filter>File di risorse</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutForm.resx">
+      <Filter>File di risorse</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newPasswordForm.resx">
+      <Filter>File di risorse</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passwordForm.resx">
+      <Filter>File di risorse</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="alarm.wav">
+      <Filter>File di risorse</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>File di risorse</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

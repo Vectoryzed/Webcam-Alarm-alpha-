@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="default_manifest.png" />
+    <Image Include="grey_alert.ico" />
+    <Image Include="grey_alert_16.ico" />
+    <Image Include="grey_alert_24.ico" />
+    <Image Include="red_alert_16.ico" />
+    <Image Include="red_alert_24.ico" />
+    <Image Include="settings_ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aboutForm.cpp" />
+    <ClCompile Include="functions.cpp" />
+    <ClCompile Include="newPasswordForm.cpp" />
+    <ClCompile Include="passwordForm.cpp" />
+    <ClCompile Include="settingsForm.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <MinimalRebuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</MinimalRebuild>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Async</ExceptionHandling>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <MinimalRebuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</MinimalRebuild>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="settings_data.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aboutForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="newPasswordForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="passwordForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="settingsForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="settings_data.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aboutForm.resx">
+      <DependentUpon>aboutForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newPasswordForm.resx">
+      <DependentUpon>newPasswordForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passwordForm.resx">
+      <DependentUpon>passwordForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settingsForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="alarm.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4ADAFBC-E6AB-47E7-A5EA-1EF7F68A3EDE}</ProjectGuid>
+    <RootNamespace>WebcamAlarm_alpha</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\opencv\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>false</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\opencv\build\x64\vc11\lib;C:\Program Files (x86)\Windows Kits\8.0\Lib\win8\um\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d2410d.lib;opencv_contrib2410d.lib;opencv_core2410d.lib;opencv_features2d2410d.lib;opencv_flann2410d.lib;opencv_gpu2410d.lib;opencv_highgui2410d.lib;opencv_imgproc2410d.lib;opencv_legacy2410d.lib;opencv_ml2410d.lib;opencv_nonfree2410d.lib;opencv_objdetect2410d.lib;opencv_ocl2410d.lib;opencv_photo2410d.lib;opencv_stitching2410d.lib;opencv_superres2410d.lib;opencv_ts2410d.lib;opencv_video2410d.lib;opencv_videostab2410d.lib;WinMM.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\opencv\build\include\opencv2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\opencv\build\x64\vc11\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d2410.lib;opencv_contrib2410.lib;opencv_core2410.lib;opencv_features2d2410.lib;opencv_flann2410.lib;opencv_gpu2410.lib;opencv_highgui2410.lib;opencv_imgproc2410.lib;opencv_legacy2410.lib;opencv_ml2410.lib;opencv_nonfree2410.lib;opencv_objdetect2410.lib;opencv_ocl2410.lib;opencv_photo2410.lib;opencv_stitching2410.lib;opencv_superres2410.lib;opencv_ts2410.lib;opencv_video2410.lib;opencv_videostab2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

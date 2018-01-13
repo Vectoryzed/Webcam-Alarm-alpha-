@@ -1,0 +1,11 @@
+﻿Compilazione avviata 06/02/2015 19:04:46.
+     1>Progetto "C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\WebcamAlarm_alpha\WebcamAlarm_alpha.vcxproj" sul nodo 2 (destinazioni: Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib functions.cpp
+         functions.cpp
+     1>functions.cpp(16): fatal error C1083: Impossibile aprire il file inclusione 'opencv2/opencv.hpp': No such file or directory
+     1>Compilazione progetto "C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\WebcamAlarm_alpha\WebcamAlarm_alpha.vcxproj" (destinazioni: Build) NON COMPLETATA.
+
+Compilazione NON RIUSCITA.
+
+Tempo trascorso 00:00:04.85

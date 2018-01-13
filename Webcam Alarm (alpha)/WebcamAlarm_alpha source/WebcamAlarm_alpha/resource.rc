@@ -1,0 +1,29 @@
+AAA ICON myicon.ico
+
+1 VERSIONINFO
+FILEVERSION 0,3,0,0
+PRODUCTVERSION 0,3,0,0
+FILEOS 0x4
+FILETYPE 0x1
+{
+BLOCK "StringFileInfo"
+{
+	BLOCK "040904B0"
+	{
+		VALUE "Comments", "Prodotto da Christian Onzaca, Daniele Vergara, Antonio Pagano"
+		VALUE "CompanyName", "El Verga Corporation"
+		VALUE "FileDescription", "Webcam Alarm (Alpha)"
+		VALUE "FileVersion", "0.3.0.0"
+		VALUE "InternalName", "WebcamAlarm_alpha"
+		VALUE "LegalCopyright", "Copyright © 2015. Tutti i diritti riservati."
+		VALUE "OriginalFilename", "WebcamAlarm_alpha.exe"
+		VALUE "ProductName", "Webcam Alarm"
+		VALUE "ProductVersion", "0.3.0.0"
+	}
+}
+
+BLOCK "VarFileInfo"
+{
+	VALUE "Translation", 0x0409 0x04B0
+}
+}
