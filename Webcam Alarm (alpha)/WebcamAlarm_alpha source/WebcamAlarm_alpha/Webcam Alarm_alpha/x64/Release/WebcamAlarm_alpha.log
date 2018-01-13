@@ -1,0 +1,23 @@
+﻿Compilazione avviata 28/07/2015 12:08:49.
+     1>Progetto "C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\WebcamAlarm_alpha\WebcamAlarm_alpha.vcxproj" sul nodo 2 (destinazioni: Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\opencv\build\include\opencv2 /Zi /clr /nologo /W3 /WX- /sdl- /O2 /Oi /GL /D _MBCS /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /TP /errorReport:prompt "C:\Users\Christian\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\x64\Release\WebcamAlarm_alpha.exe" /NOLOGO /LIBPATH:D:\opencv\build\x64\vc11\lib opencv_calib3d2410.lib opencv_contrib2410.lib opencv_core2410.lib opencv_features2d2410.lib opencv_flann2410.lib opencv_gpu2410.lib opencv_highgui2410.lib opencv_imgproc2410.lib opencv_legacy2410.lib opencv_ml2410.lib opencv_nonfree2410.lib opencv_objdetect2410.lib opencv_ocl2410.lib opencv_photo2410.lib opencv_stitching2410.lib opencv_superres2410.lib opencv_ts2410.lib opencv_video2410.lib opencv_videostab2410.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:x64\Release\WebcamAlarm_alpha.aboutForm.resources /ASSEMBLYRESOURCE:x64\Release\WebcamAlarm_alpha.newPasswordForm.resources /ASSEMBLYRESOURCE:x64\Release\WebcamAlarm_alpha.passwordForm.resources /ASSEMBLYRESOURCE:x64\Release\WebcamAlarm_alpha.settingsForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\x64\Release\WebcamAlarm_alpha.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Release\resource.res
+         x64\Release\aboutForm.obj
+         x64\Release\functions.obj
+         x64\Release\newPasswordForm.obj
+         x64\Release\passwordForm.obj
+         x64\Release\settingsForm.obj
+         x64\Release\settings_data.obj
+         x64\Release\stdafx.obj
+         "x64\Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         LINK : è stata specificata l'opzione /LTCG ma non è richiesta la generazione del codice; rimuovere /LTCG dalla riga di comando del collegamento per migliorare le prestazioni del linker
+     1>opencv_ts2410.lib(opencv_ts_pch.obj) : warning LNK4099: impossibile trovare il PDB 'opencv_ts2410.pdb' con 'opencv_ts2410.lib(opencv_ts_pch.obj)' o in 'C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\x64\Release\opencv_ts2410.pdb'; oggetto collegato senza informazioni di debug
+         WebcamAlarm_alpha.vcxproj -> C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\x64\Release\WebcamAlarm_alpha.exe
+     1>Compilazione progetto "C:\Users\Christian\documents\visual studio 2012\Projects\WebcamAlarm_alpha\WebcamAlarm_alpha\WebcamAlarm_alpha.vcxproj" (destinazioni: Build) completata.
+
+Compilazione completata.
+
+Tempo trascorso 00:00:09.39
