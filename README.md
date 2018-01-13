@@ -10,4 +10,4 @@ The project has the following features:
 - Acquisition of images at the time of detection 
 - Much more
 
-The software has been developed using OpenCV, an open source library of computer vision functions, and Microsoft Visual Studio Express. 
+The software has been developed using OpenCV, a computer vision open source library, and Microsoft Visual Studio Express. 
