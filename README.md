@@ -8,5 +8,6 @@ The project has the following features:
 - Detection of the movement in the webcam FOV
 - Reproduction of an alarm sound in case of movement detection
 - Acquisition of images at the time of detection 
+- Much more
 
 The software has been developed using OpenCV, an open source library of computer vision functions, and Microsoft Visual Studio Express. 
